@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Organic Farms</title>
+  <link rel="stylesheet" href="css/main.css">
+  <!--Fonts-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa&family=Oleo+Script&display=swap" rel="stylesheet">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBarTarget" aria-controls="navBarTarget" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <a class="navbar-brand" href="index.html" title="Homepage">
+        <img src="/images/organic-farms-logo.svg"/>
+      </a>
+      <button id="search-btn" class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+      <div id="search-menu">
+        <div class="container">
+          <form action="">
+            <button class="btn btn-outline-secondary" id="close-search"><i class="fa-solid fa-arrow-left"></i></button>
+            <input type="search" placeholder="Search" aria-label="Search">
+            <button type="submit" class="btn btn-outline-secondary" id="submit-search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+        </div>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navBarTarget">
+        <ul class="navbar-nav me-auto m-auto ">
+          <li class="nav-item px-5">
+            <a class="nav-link" href="#" title="Marketplace">Marketplace</a>
+          </li>
+          <li class="nav-item px-5">
+            <a class="nav-link" href="#" title="Recipes">Recipes</a>
+          </li>
+          <li class="nav-item px-5">
+            <a class="nav-link" href="#" title="Blog">Blog</a>
+          </li>
+          <li class="nav-item px-5">
+            <a class="nav-link" href="#" title="Contact Us">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div id="hero">
+    <h1 class="display-3">Clean, Natural and Wholesome since 2012</h1>
+  </div>
+  <section id="info-cards" class="p-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 gy-4">
+          <div class="card h-100">
+            <img src="images/the-appleseed-family.jpg" alt="Jerry and Jeannie Appleseed and family" class="card-img-top">
+            <div class="card-body">
+              <h3>Family Owned &amp; Operated</h3>
+              <p>Since Jerry and Jeannie Appleseed founded the first Organic Farms farm in 2012, nearly 60 family farms across the Midwest have become proud affiliates.</p>
+              <a class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 gy-4">
+          <div class="card h-100">
+            <img src="images/carrots.jpeg" alt="basket of carrots" class="card-img-top">
+            <div class="card-body">
+              <h3>Our Mission</h3>
+              <p>Organic Farms is more than a company.  We strive to change the conversation around food, family and health. </p>
+              <a class="btn btn-primary" title="Read More">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 gy-4">
+          <div class="card h-100">
+            <img src="images/family-owned-operated.jpg" alt="Girl with hay bale" class="card-img-top">
+            <div class="card-body">
+              <h3>FAQ</h3>
+              <p>Check out some frequently asked questions about our company.</p>
+              <a class="btn btn-primary" title="Read More">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </div>
+  </section>
+  <section id="featured-blog">
+    <img src="images/featured-blog-post.jpg" alt="Cow staring at camera" class="img-fluid">
+    <div class="container-fluid p-4 ">
+      <div class="wrapper h-100 w-100">
+        <h2 class="display-5">Featured Blog Post</h2>
+        <h3>The Advantages of Grass-Fed Beef</h3>
+        <p>Pasture-raised, grass-fed beef has rightly earned a reputation as one of the best healthy protein sources.  <em>Featured Farmer</em> Silas P. Schroeder and his wife, Paulette explain the science behind the hype and why you should only eat beef raised the all-natural way.
+        </p>
+        <a class="btn btn-outline-secondary" title="Read More">Read More</a>
+      </div>
+
+    </div>
+  </section>
+  <section id="recipes" class="p-5 ">
+    <div class="container">
+      <h2 class="text-center display-5">Featured Recipes</h2>
+      <div class="row py-5 gx-5 gy-5 align-items-center">
+        <div class="col-md-6 recipe-description">
+          <h3>Spinach &amp; Quinoa Salad</h3>
+          <div class="container">
+            <h4>Adam Featherstone</h4>
+            <p>Here’s a healthy side dish you can feel good about serving. Spinach packs a mighty punch of vitamins, while quinoa delivers a hearty serving of protein. Best of all, the flavor of this salad can’t be beat!
+            </p>
+            <a class="btn btn-secondary" href="#" title="View Recipe">Make it</a>
+          </div>
+
+        </div>
+        <div class="col-md-6 recipe-image">
+          <img src="images/recipe-01.jpg" alt="Spinach and Quinoa Salad" class="img-fluid">
+        </div>
+      </div>
+      <div class="row py-5 gx-5 gy-5 align-items-center">
+        <div class="col-md-6 recipe-description ">
+          <h3>Organic Vegetable Medley</h3>
+          <div class="container">
+            <h4>Samantha Smith</h4>
+            <p>A delectable, healthy medley of sauteed vegetables and herbs raised 100% all natural, organic and non-GMO.
+            </p>
+            <a class="btn btn-secondary" href="#" title="View Recipe">Make it</a>
+          </div>
+        </div>
+        <div class="col-md-6 recipe-image">
+          <img src="images/recipe-02.jpg" alt="Organic Vegetable Medley" class="img-fluid">
+        </div>
+      </div>
+      <a href="#" class="btn btn-secondary" title="See more recipes">See more recipes</a>
+    </div>
+  </section>
+
+  <section id="find-affiliate">
+    <div class="container">
+      <h2 class="display-5">Find an affiliate near you</h2>
+      <form>
+        <div class="form-group mb-5">
+          <label for="">My ZIP Code:</label>
+          <input type="text" aria-label="ZIP Code" placeholder="ZIP" >
+        </div>
+        <div class="form-group my-5">
+          <label for="">Within:</label>
+          <select aria-label="Within">
+            <option value="5 miles">5 Miles</option>
+            <option value="10 miles">10 Miles</option>
+            <option value="25 miles">25 Miles</option>
+            <option value="50 miles">50 Miles</option>
+          </select>
+        </div>
+        <button class="btn btn-outline-secondary" type="submit">Find</button>
+      </form>
+    </div>
+
+  </section>
+
+  <footer>
+    <div class="container p-4">
+      <div class="row gy-5">
+        <div class="col-md-4 text-center social-media-links">
+          <h3>Stay Connected</h3>
+          <ul>
+            <li><a href="#" title="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#" title="Youtube"><i class="fa-brands fa-youtube"></i></a></li>
+            <li><a href="#" title="Twitter"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#" title="Pinterest"><i class="fa-brands fa-pinterest"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 related-links">
+          <h3>Related Links</h3>
+          <ul>
+            <li><a href="#" title="One OrganiX Nation">One OrganiX Nation</a></li>
+            <li><a href="#" title="Non-GMO America">Non-GMO America</a></li>
+            <li><a href="#" title="Go Organic or Go Home">Go Organic or Go Home</a></li>
+            <li><a href="#" title="My Organic Paradise by Gideon Gregory Wells">My Organic Paradise by Gideon Gregory Wells</a></li>
+            <li><a href="#" title="The Association of North American Organic Producers">The Association of North American Organic Producers</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <div id="certifications">
+            <img src="/images/gmo-free.svg" alt="GMO Free certification" />
+            <img src="/images/usda-organic.svg" alt="USDA Organic certification" />
+          </div>
+          <div class="address-info">
+            <a>
+              <img src="images/organic-farms-logo.svg" alt="Organic Farms Logo" class="img-fluid">
+            </a>
+            <address>
+              Organic Farms LLC.
+              <br>
+              458 Hwy 32 Lancaster, WI 53813
+              <br>
+              1.608.852.5554
+            </address>
+          </div>
+          </div>
+
+      </div>
+    </div>
+
+    <div id="copyright" class="text-center">Copyright &copy; <span id="current-year"></span> Organic Farms</div>
+    <script src="/scripts/script.js"></script>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,519 @@
+
+/*Universal Styles*/
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+}
+
+/*Get rid of obnoxious black line around inputs/textareas in Chrome*/
+*, *:focus, *:hover {
+    outline: none;
+}
+
+body 
+{
+  max-width: 100%;
+}
+
+h1
+{
+  text-align: center;
+  font-family: 'Oleo Script', cursive;
+  text-shadow:2px 2px #000;
+}
+
+h2 
+{
+  text-shadow: 1px 2px #000;
+  font-family: 'Oleo Script', cursive;
+}
+
+a:hover 
+{
+  color:#AC911A;
+}
+
+button.btn, a.btn 
+{
+  border:none;
+}
+
+button.btn-primary , a.btn-primary
+{
+  border:none;
+  background-color:rgba(88,96,63,1);
+  color: #fff;
+}
+
+button.btn-primary:hover, a.btn-primary:hover 
+{
+  background-color:#AC911A;
+  color: #fff;
+}
+
+button.btn-secondary, a.btn-secondary 
+{
+  background-color:#fff;
+  color:rgba(88,96,63,1);
+}
+
+button.btn-secondary:hover, a.btn-secondary:hover 
+{
+  background-color:rgba(88,96,63,1);
+  color:#fff;
+}
+
+button.btn-outline-secondary, a.btn-outline-secondary 
+{
+  color:#fff;
+  border: 1px solid #fff;
+}
+
+button.btn-outline-secondary:hover, a.btn-outline-secondary:hover 
+{
+  background-color:#fff;
+  color:rgba(88,96,63,1)
+}
+
+.navbar
+{
+  font-family: 'Bebas Neue', cursive;
+  background-color: transparent;
+  transition:all ease .5s;
+  box-shadow:1px 1px #000;
+}
+
+button.navbar-toggler 
+{
+  border:none;
+}
+
+.navbar-brand img 
+{
+  width:50px;
+}
+
+.navbar.navbar-dark
+{
+  background-color: rgba(88,96,63,1);
+  color:#fff;
+}
+
+.navbar-dark.navbar li a
+{
+  color:#fff;
+  font-size:32px;
+  letter-spacing: 1.5px;
+}
+
+.navbar-dark a.nav-link:hover 
+{
+  color:#AC911A;
+}
+
+#hero 
+{
+  background:url("../images/hero.jpeg");background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+  height:100vh;
+  width:100%;
+  position:relative;
+}
+
+#hero h1 
+{
+  color:#fff;
+  position:absolute;
+  bottom:10%;
+  left:30%;
+  right:30%;
+}
+
+#search-btn
+{
+  border:none;
+  color:#fff;
+}
+
+#search-btn:hover, #search-btn:active, .navbar-toggler:hover 
+{
+  background-color:white;
+  color:rgba(88,96,63,1);
+}
+
+#search-menu
+{
+  position:absolute;
+  width:100%;
+  height:100%;
+  transition:all ease .25s;
+  right:100vw;
+  top:0;
+  z-index:999;
+  background-color: rgba(88,96,63,1);
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#search-menu.visible 
+{
+  right:0;
+}
+
+#search-menu .container 
+{
+}
+
+#search-menu .container #close-search 
+{
+  border:none;
+}
+
+#search-menu form 
+{
+  display: flex;
+  justify-content: center;
+  width:100%;
+}
+
+#search-menu form input 
+{
+  border-radius: 30px 0 0 30px;
+  border:1px solid #fff;
+  border-right:none;
+  padding:7px 15px;
+  font-family: 'Bebas Neue', cursive;
+  font-size:24px;
+  color:#fff;
+  background-color: transparent;
+  max-width:500px;
+}
+
+#search-menu form input::placeholder 
+{
+  color:rgba(255,255,255,.6);
+}
+
+#search-menu form #submit-search-btn
+{
+  border-radius: 0 30px 30px 0;
+  border:1px solid #fff;
+  border-left:none;
+}
+
+
+
+.card-body
+{
+  display:flex;
+  flex-direction: column;
+}
+.card-body .btn 
+{
+  margin-top: auto;
+  margin-left:auto;
+  margin-right:auto;
+  max-width: 150px;
+}
+
+#recipes 
+{
+  background-color: rgba(172, 145, 26, 1);
+  color:white;
+  text-align: right;
+}
+
+.recipe-description 
+{
+  order:2;
+  text-align:center;
+}
+
+.recipe-description .container
+{ 
+  padding:50px;
+  background-color:rgba(88,96,63,.25);
+  border-radius:0 0 20px 20px;
+}
+
+.recipe-description h3 
+{
+  margin:0;
+  background-color:rgba(88,96,63,1);
+  padding:10px;
+  font-family: 'Oleo Script', cursive;
+  font-size: 34px;
+  border-radius:20px 20px 0 0;
+}
+
+.recipe-description p{
+  text-align: left;
+}
+
+.recipe-image 
+{
+  order : 1;
+}
+
+.recipe-image img
+{
+  box-shadow:1px 1px 2px #000;
+}
+
+#featured-blog 
+{
+  position:relative;
+}
+
+#featured-blog .container-fluid
+{
+  position: absolute;
+  background-color:rgba(88,96,63,.9);
+  color: #fff;
+  width:100%;
+  height:100%;
+  top:0;
+  text-align:center;
+}
+
+#featured-blog .container-fluid .wrapper 
+{
+  
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#featured-blog .container-fluid p
+{
+  text-align:left;
+}
+
+#featured-blog .container-fluid .btn 
+{
+  max-width: 150px;
+  align-self: center;
+}
+
+#find-affiliate 
+{
+  background:linear-gradient(rgba(88,96,63,.75), rgba(88,96,63,.75)), url("../images/find-affiliate-near-you.jpg");
+  color:#fff;
+  background-position: center;
+  background-repeat: no-repeat;
+  height:100vh;
+  width:100%;
+  position:relative;
+}
+
+#find-affiliate .container 
+{
+  max-width:500px;
+  display:flex;
+  flex-direction: column;
+  height:100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#find-affiliate form 
+{
+  width:100%;
+}
+
+#find-affiliate input, #find-affiliate select
+{
+  width:100%;
+  background-color: transparent;
+  padding: 10px;
+  color:#fff;
+  border: 1px solid #fff;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 1.5px;
+  font-size:24px;
+}
+
+#find-affiliate input::placeholder
+{
+  font-family: 'Bebas Neue', cursive;
+  color:rgba(255,255,255,.6);
+  font-size:24px;
+}
+
+#find-affiliate option
+{
+  color:rgba(88,96,63,1)
+}
+
+#find-affiliate button
+{
+  width:100px;
+  float:right;
+}
+
+footer 
+{
+  background-color: rgba(88,96,63,1);
+  color:#fff;
+}
+
+.social-media-links ul
+{
+  padding-left:0;
+  list-style-type: none;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  gap:15px;
+}
+
+.social-media-links ul li a
+{
+  font-size:44px;
+  color:rgba(255,255,255,.8);
+}
+
+.social-media-links ul li a:hover
+{
+  color:#AC911A;
+}
+
+.related-links h3 
+{
+  text-align: center;
+}
+
+.related-links ul 
+{
+  padding-left:0;
+  list-style-type: none;
+}
+
+.related-links ul li 
+{
+  padding-bottom:7px;
+
+}
+
+.related-links ul li a 
+{
+  color:rgba(255,255,255,.6);
+}
+
+.related-links ul li a:hover 
+{
+  color:#AC911A;
+  text-decoration: none;
+}
+
+#certifications 
+{
+  text-align: center;
+  padding-bottom:20px;
+}
+
+#certifications img 
+{
+
+  max-width: 50px;
+}
+
+.address-info 
+{
+  display:flex;
+  justify-content: center;
+  gap:15px;
+}
+
+.address-info img
+{
+  width:70px;
+}
+
+#copyright 
+{
+  background-color: #fff;
+  color: rgba(88,96,63,1);
+  padding:5px;
+}
+
+@media screen and (min-width:768px)
+{
+  #search-menu form input 
+  {
+    width:600px;
+  }
+  #recipes :nth-child(3) .recipe-description
+  {
+    order: 1;
+  }
+}
+
+@media screen and (min-width: 992px) 
+{
+  .navbar 
+  {
+    
+    box-shadow:none;
+  }
+
+  #featured-blog .container-fluid
+  {
+    width:50%;
+    right:0;
+  }
+
+  #featured-blog .container-fluid .wrapper 
+  {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .navbar.navbar-dark
+  {
+    background-color:transparent;
+  }
+
+  .navbar-dark.nav-scrolled
+  {
+    box-shadow:1px 1px #000;
+    background-color: rgba(88,96,63,1);
+  }
+
+  .navbar-dark.navbar li a 
+  {
+    color:rgba(88,96,63,1);
+    text-shadow:none;
+  }
+
+  .navbar-dark.nav-scrolled li a 
+  {
+    color:#fff;
+  }
+
+  #search-btn 
+  {
+    order:3;
+    color:rgba(88,96,63,1);
+  }
+
+  #search-btn:hover, #search-btn:active 
+  {
+    background-color: transparent;
+    color:#AC911A;
+  }
+
+  .nav-scrolled #search-btn
+  {
+    color:#fff;
+  }
+
+  .nav-scrolled #search-btn:hover, .nav-scrolled #search-btn:active
+  {
+    background-color: transparent;
+    color:#AC911A;
+  }
+}
