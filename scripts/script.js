@@ -1,10 +1,12 @@
 //Set the current year in copyright text
 document.querySelector("#copyright #current-year").innerHTML = new Date().getUTCFullYear();
 
-//Set navbar color
+//Set navbar and hero colors based on scroll position
 const nav = document.querySelector("nav.navbar");
+const hero = document.querySelector("#hero");
 const handleScroll = () =>
 {
+  //Navbar
   if (window.innerWidth > 992)
   {
     if (window.scrollY > 50)
@@ -16,7 +18,18 @@ const handleScroll = () =>
       nav.classList.remove("nav-scrolled")
     }
   }
+
+  //Hero
+  if (window.scrollY > 100)
+  {
+    hero.classList.add("hero-scrolled")
+  }
+  else 
+  {
+    hero.classList.remove("hero-scrolled")
+  }
 }
+
 
 //Show/hide search menu
 const searchBtn = document.querySelector("#search-btn");
