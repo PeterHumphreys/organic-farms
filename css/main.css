@@ -1,5 +1,4 @@
-
-/*Universal Styles*/
+/*CSS Reset*/
 *
 {
     box-sizing: border-box;
@@ -7,6 +6,7 @@
     margin:0;
 }
 
+/*Global Styles*/
 /*Get rid of obnoxious black line around inputs/textareas in Chrome*/
 *, *:focus, *:hover {
     outline: none;
@@ -26,8 +26,21 @@ h1
 
 h2 
 {
-  text-shadow: 1px 2px #000;
   font-family: 'Oleo Script', cursive;
+}
+
+.section-dark{
+  color:#fff;
+  position:relative;
+  background:linear-gradient(rgba(88,96,63,.75), rgba(88,96,63,.75)), url("../images/cornfield.jpeg");    
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.section-dark h2 
+{
+  text-shadow: 1px 2px #000;
 }
 
 a:hover 
@@ -38,6 +51,7 @@ a:hover
 button.btn, a.btn 
 {
   border:none;
+  border-radius:0;
 }
 
 button.btn-primary , a.btn-primary
@@ -77,12 +91,26 @@ button.btn-outline-secondary:hover, a.btn-outline-secondary:hover
   color:rgba(88,96,63,1)
 }
 
+.social-media-links ul
+{
+  padding-left:0;
+  list-style-type: none;
+  display:flex;
+  flex-wrap: wrap;
+  gap:15px;
+}
+
+.social-media-links ul li a:hover
+{
+  color:#AC911A;
+}
+
+/*Navigation*/
 .navbar
 {
   font-family: 'Bebas Neue', cursive;
   background-color: transparent;
   transition:all ease .5s;
-  box-shadow:1px 1px #000;
 }
 
 button.navbar-toggler 
@@ -111,42 +139,6 @@ button.navbar-toggler
 .navbar-dark a.nav-link:hover 
 {
   color:#AC911A;
-}
-
-#hero 
-{
-  background:url("../images/cornfield.jpeg");
-  background-size: cover;
-  background-position: center right;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  height:100vh;
-  width:100%;
-  position:relative;
-}
-
-#hero .overlay
-{
-  transition:all ease .5s;
-  position:absolute;
-  width:100%;
-  height:100%;
-  background-color: rgba(88,96,63,1);
-  opacity:0;
-}
-
-#hero.hero-scrolled .overlay
-{
-  opacity:.75;
-}
-
-#hero h1 
-{
-  color:#fff;
-  position:absolute;
-  bottom:10%;
-  left:30%;
-  right:30%;
 }
 
 #search-btn
@@ -218,6 +210,44 @@ button.navbar-toggler
   border-left:none;
 }
 
+/*Hero*/
+#hero 
+{
+  background:url("../images/cornfield.jpeg");
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height:100vh;
+  width:100%;
+  position:relative;
+}
+
+#hero .overlay
+{
+  transition:all ease .5s;
+  position:absolute;
+  width:100%;
+  height:100%;
+  background-color: rgba(88,96,63,1);
+  opacity:0;
+}
+
+#hero.hero-scrolled .overlay
+{
+  opacity:.75;
+}
+
+#hero h1 
+{
+  color:#fff;
+  position:absolute;
+  bottom:10%;
+  left:30%;
+  right:30%;
+}
+
+/*Company Info*/
 .card-body
 {
   display:flex;
@@ -231,59 +261,48 @@ button.navbar-toggler
   max-width: 150px;
 }
 
-#recipes 
+.card-body h3 
 {
-  background-color: rgba(172, 145, 26, 1);
-  color:white;
-  text-align: right;
+  text-align: center;
 }
 
-.recipe-description 
+/*The Marketplace*/
+#the-marketplace
 {
-  order:2;
-  text-align:center;
+  color:rgba(88,96,63,1);
 }
 
-.recipe-description .container
-{ 
-  padding:50px;
-  background-color:rgba(88,96,63,.25);
-  border-radius:0 0 20px 20px;
-}
-
-.recipe-description h3 
+#the-marketplace .social-media-links ul
 {
-  margin:0;
-  background-color:rgba(88,96,63,1);
-  padding:10px;
-  font-family: 'Oleo Script', cursive;
-  font-size: 34px;
-  border-radius:20px 20px 0 0;
+  margin-bottom:30px;
 }
 
-.recipe-description p{
-  text-align: left;
-}
-
-.recipe-image 
+#the-marketplace .social-media-links ul li a 
 {
-  order : 1;
+  color:rgba(88,96,63,1);
+  font-size:32px;
 }
 
-.recipe-image img
+#the-marketplace .social-media-links ul li a:hover 
 {
-  box-shadow:1px 1px 2px #000;
+  color:#AC911A;
 }
 
-#featured-farmer 
+#the-marketplace .container .row p 
 {
-  position:relative;
-  background:linear-gradient(rgba(88,96,63,.75), rgba(88,96,63,.75)), url("../images/cornfield.jpeg");    
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  padding-bottom:30px;
+  border-bottom:4px solid rgba(88,96,63,1);
 }
 
+#find-marketplace-btn
+{
+  display:block;
+  width:fit-content;
+  margin:auto;
+  padding:15px;
+}
+
+/*Featured Farmer*/
 #featured-farmer h2 
 {
   border-bottom: 5px solid #fff;
@@ -299,23 +318,17 @@ button.navbar-toggler
   text-align:center;
 }
 
-
 #featured-farmer .container .btn 
 {
   max-width: 150px;
   align-self: center;
 }
 
+/*Find Affiliate*/
 #find-affiliate 
 {
-  background:linear-gradient(rgba(88,96,63,.75), rgba(88,96,63,.75)), url("../images/cornfield.jpeg");
-  color:#fff;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   height:100vh;
   width:100%;
-  position:relative;
 }
 
 #find-affiliate .container 
@@ -363,32 +376,24 @@ button.navbar-toggler
   float:right;
 }
 
+/*Footer*/
 footer 
 {
   background-color: rgba(88,96,63,1);
   color:#fff;
 }
 
-.social-media-links ul
+footer .social-media-links ul
 {
-  padding-left:0;
-  list-style-type: none;
-  display:flex;
-  flex-wrap: wrap;
   justify-content:center;
-  gap:15px;
 }
 
-.social-media-links ul li a
+footer .social-media-links ul li a
 {
   font-size:44px;
   color:rgba(255,255,255,.8);
 }
 
-.social-media-links ul li a:hover
-{
-  color:#AC911A;
-}
 
 .related-links h3 
 {
@@ -455,20 +460,20 @@ footer
   {
     width:600px;
   }
-  #recipes :nth-child(3) .recipe-description
+  #the-marketplace .container .row:nth-of-type(even) div:nth-child(1)
   {
-    order: 1;
+    text-align: right;
+    order:2;
+  }
+
+  #find-marketplace-btn
+  {
+    margin-right:0;
   }
 }
 
 @media screen and (min-width: 992px) 
 {
-  .navbar 
-  {
-    
-    box-shadow:none;
-  }
-
   #featured-farmer .container-fluid .wrapper 
   {
     max-width: 700px;
@@ -481,7 +486,6 @@ footer
 
   .navbar-dark.nav-scrolled
   {
-    box-shadow:1px 1px #000;
     background-color: rgba(88,96,63,1);
   }
 
@@ -518,4 +522,6 @@ footer
     background-color: transparent;
     color:#AC911A;
   }
+
+  
 }
