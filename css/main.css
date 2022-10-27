@@ -238,13 +238,17 @@ button.navbar-toggler
   opacity:.75;
 }
 
+#hero .container 
+{
+  position:absolute;
+  bottom:10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 #hero h1 
 {
   color:#fff;
-  position:absolute;
-  bottom:10%;
-  left:30%;
-  right:30%;
 }
 
 /*Company Info*/
